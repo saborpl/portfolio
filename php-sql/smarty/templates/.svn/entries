@@ -1,0 +1,65 @@
+8
+
+dir
+0
+http://sabor@snell.pl/repo/projekty/robas/DefaultSiteCMS/templates
+http://sabor@snell.pl/repo/projekty
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+firmy_spis.tpl
+file
+
+
+
+add
+
+firmy_tresc.tpl
+file
+
+
+
+add
+
+_notes
+dir
+
+
+
+add
+
+publikacje.tpl
+file
+
+
+
+add
+
+admin
+dir
+
+
+
+add
+
+firmy_wizytowka.tpl
+file
+
+
+
+add
+
+user
+dir
+
+
+
+add
+

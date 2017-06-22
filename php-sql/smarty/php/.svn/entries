@@ -1,0 +1,65 @@
+8
+
+dir
+0
+http://sabor@snell.pl/repo/projekty/robas/DefaultSiteCMS/php
+http://sabor@snell.pl/repo/projekty
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+images
+dir
+
+
+
+add
+
+_notes
+dir
+
+
+
+add
+
+configs
+dir
+
+
+
+add
+
+css
+dir
+
+
+
+add
+
+login
+dir
+
+
+
+add
+
+inc
+dir
+
+
+
+add
+
+js
+dir
+
+
+
+add
+

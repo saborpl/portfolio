@@ -1,0 +1,58 @@
+8
+
+dir
+0
+http://sabor@snell.pl/repo/projekty/robas/DefaultSiteCMS/templates/admin
+http://sabor@snell.pl/repo/projekty
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+ksiazkiOLD.tpl
+file
+
+
+
+add
+
+menu.tpl
+file
+
+
+
+add
+
+ksiazki.tpl
+file
+
+
+
+add
+
+glowna.tpl
+file
+
+
+
+add
+
+_notes
+dir
+
+
+
+add
+
+autorzy.tpl
+file
+
+
+
+add
+
