@@ -1,0 +1,60 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.content{
+  background-color: color($colors, background-light, base);
+  background-image: url("../assets/images/background.jpg");
+  background-size: cover;
+  //opacity: 0.5;
+}
+
+.ion-icon-2x {
+  font-size: 160%;
+}
+
+page-popover-scene, page-popover-day, page-popover-roll, page-popover-tag, page-popover-search, page-popover-meta {
+    .fixed-content {
+        background-color: color($colors, white);
+    }
+    .popover-content {
+        background-color: color($colors, dark, base);
+    }
+    ion-content {
+    margin-top: 44px;
+    }
+
+    ion-col {
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        & .title {
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+        & .text {
+          color: #aaa;
+        }
+    }
+    .popover-row-thumb {
+        background-color: color($colors,dark);
+    }
+    .popover-col-thumb {
+        border: 1px solid darken(color($colors, orange),30%);
+        padding: 0;
+    }
+    
+}

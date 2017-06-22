@@ -1,0 +1,25 @@
+accordion-ticket-list {
+    .panel-heading {
+        padding: 20px;
+        border-bottom: 1px solid transparent;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+    a {
+        cursor: pointer;
+        text-transform: uppercase !important;
+        &:hover,&:visited {
+            text-decoration: none;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+    } 
+    // @mixin linx ($link, $visit, $hover, $active) {
+    @include linx(
+        map-get($colors, "green-dark"),
+        map-get($colors, "green-dark"),
+        map-get($colors, "green-dark-hover"),
+        lighten(map-get($colors, "green-dark"), 20%)
+    );
+}

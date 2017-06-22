@@ -1,0 +1,10 @@
+﻿.steps 
+{  
+    margin: 15px 0;
+    color: $gray-light; 
+
+    .active > & { color: $gray-dark }
+}
+
+.steps-number{ font-size: 16px; }
+.steps-name{ font-size: 22px; }

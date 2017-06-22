@@ -1,0 +1,30 @@
+﻿.dialog-center
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -141px 0 0 -300px;
+}
+
+.dialog-title
+{
+  color: $blue-dark;
+}
+
+.dialog-strong
+{
+  font-size: 16px;
+  color: $red;
+}
+
+.dialog .glyphicon { margin-right: 5px; }
+
+.modal-content {
+    background-clip: padding-box;
+    background-color: $theme-repertoire-popup-background;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+    outline: 0 none;
+    position: relative;
+}

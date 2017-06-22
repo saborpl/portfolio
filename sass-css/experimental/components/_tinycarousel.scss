@@ -1,0 +1,87 @@
+﻿/* Tiny Carousel */
+
+$slider-width : 240px;
+$slider-height : 120px;
+
+#slider1 {
+    height: 1%;
+    margin: 30px 0 0;
+    overflow: hidden;
+    position: relative;
+    padding: 0 50px 10px;
+}
+
+#slider1 .viewport {
+    height: $slider-height + 6;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider1 .buttons {
+    background: $theme-btn-color-kup;
+    border-radius: 35px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    color: $theme-button-font-color-kup;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+#slider1 .next {
+    right: 0;
+    left: auto;
+    top: 50%;
+}
+
+#slider1 .buttons:hover {
+    color: #fff;
+    background: #C01313;
+}
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: $slider-width + 4;
+    left: 0;
+    top: 0;
+}
+
+#slider1 .overview li {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 1px;
+    height: $slider-height;
+    border: 1px solid #dcdcdc;
+    width: $slider-width;
+ }
+
+ #slider1 img {
+     width: $slider-width;
+     height: $slider-height;
+ }
+
+ #slider1 .infobox {
+     position: absolute;
+     display: block;
+     width: $slider-width;
+     bottom: 10px;
+     -ms-opacity: 0.8;
+     opacity: 0.8;
+     -webkit-filter: alpha(opacity=80);
+     -moz-filter: alpha(opacity=80);
+     -o-filter: alpha(opacity=80);
+     filter: alpha(opacity=80); /* For IE8 and earlier */
+     background-color: black;
+ }

@@ -1,0 +1,23 @@
+﻿//== Check if key exists in map
+//
+@function keyInMap($m, $a)
+{
+  $ret: 0 !default;
+
+  @if type-of($m) == "map" 
+  {
+    @if map-has-key($m, $a)
+    {
+      $ret: map-get($m, $a);
+    }
+    @else
+    {
+      @each $key, $val in $m
+      {
+        $ret: keyInMap($val, $a);
+      }
+    }
+  }
+
+  @return $ret;
+}

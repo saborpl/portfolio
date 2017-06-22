@@ -1,0 +1,92 @@
+page-player {
+
+    $top-list-height: 22%;
+    $content-video-height: 100%-$top-list-height;
+    $color-orange: #E6A340;
+    //$content-video-height: 85%;
+
+    .swiper-slide {
+        width: 288px !important;
+        height: 100%;
+    }
+    
+    .content-video {
+        background-color: lighten(color($colors, background-dark, base),0%);
+        height: $content-video-height;
+        width: 100%;
+        & .overlay {
+            padding: 2px;
+            width: 60%;
+            display: block;
+            margin: 8% 10% 30% 20%;
+            position: absolute;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 2.6em;
+            font-weight: 700;
+        }
+    }
+    .content-thumb {
+        background-color: #000;
+        height: $top-list-height;
+        //width: 266px;
+        & .swiper-button-next {
+            top: 10%;
+        }
+        & .swiper-button-prev {
+            top: 10%;
+        }
+        & .swiper-pagination {
+            display: none;
+        }
+        & img {
+            height: 150px;
+
+        }
+        & img.active {
+            border: 1px solid $color-orange;            
+        }
+    }
+
+    $camera-border: 1px solid #E6A340;
+    $camera-padding: 10px 20px;
+    $camera-float: left;
+
+    .content-video .camera {
+        display: block;
+        position: absolute;
+        font-size: 2em;
+        margin: 2% 2% 2% 2%;
+        & .active {
+            border: $camera-border;
+            padding: $camera-padding;
+            float: $camera-float;
+            color: #000;
+            background-color: $color-orange;
+        }
+        & .inactive {
+            border: $camera-border;
+            padding: $camera-padding;
+            float: $camera-float;
+            color: $color-orange;
+        }
+    }
+
+    .content-video .text-medium {
+            color: white;
+            font-size: 1.5em;
+            font-weight: 700;    
+    }
+
+    .content-video .timecode {
+        position: absolute;
+        bottom: 5%;
+        margin: 2%;
+    }
+    .content-video .clip-info {
+        z-index: 1000;
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+    } 
+}

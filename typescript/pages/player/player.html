@@ -1,0 +1,80 @@
+<!--
+  Generated template for the Player page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-buttons end hideWhen="portrait">
+      <a (click)="presentPopoverScene($event)" padding class="di di-mask"></a>
+      <a (click)="presentPopoverDay($event)" padding class="di di-calendar"></a>
+      <a (click)="presentPopoverRoll($event)" padding class="di di-movie"></a>
+      <a (click)="presentPopoverTag($event)" padding class="di di-tag"></a>
+      <a (click)="presentPopoverSearch($event)" padding class="di di-search"></a>
+      <!--<a ion-text class="ion ion-ios-search ion-md-search ion-icon-2x" padding color="orange"  (click)="logout()"></a>-->
+    </ion-buttons>
+    <ion-title>The Last King · <span color="orange">First Unit</span> · Scene 5</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-padding>
+  <div class="content-thumb">
+    <ion-slides [options]="_options" #mySlider>
+      <!--      <ion-slide *ngFor="let testSlide of testSlides">
+        <img src="http://www.gstatic.com/webp/gallery/1.jpg">
+      </ion-slide>-->
+      <ion-slide><img class="active" src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B006C009_140409_R0WV_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B026C014_150305_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B048C008_150316_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B067C006_150327_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B084C010_150421_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B023C003_150304_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B006C009_140409_R0WV_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B026C014_150305_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B048C008_150316_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B067C006_150327_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B084C010_150421_R4RJ_266x150.jpg"></ion-slide>
+      <ion-slide><img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B023C003_150304_R4RJ_266x150.jpg"></ion-slide>
+    </ion-slides>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  <div class="content-video">
+    <div class="text-medium clip-info">
+      Scene 5<br> Shot 41<br> Take 2<br>
+      <ion-icon name="md-arrow-dropdown"></ion-icon> Downloaded
+      <br>
+      <span color="orange"><ion-icon ios="ios-lock" md="md-lock"></ion-icon> Keep</span>
+      <br>
+      <a color="orange" (click)="presentPopoverMeta($event)">
+        <ion-icon name="information-circle"></ion-icon>
+      </a>
+      <ion-icon name="mail" padding></ion-icon>
+    </div>
+    <div class="camera">
+      <div class="active">A</div>
+      <div class="inactive">B</div>
+      <div class="inactive">C</div>
+    </div>
+    <div class="overlay">
+      Steven Spielberg 10 November 2016 · 14:15 34°06 09.75 N 118°20 24.5 W
+    </div>
+    <div class="text-medium timecode">10:01:21:12</div>
+    <video id="video" width="100%" height="100%" controls preload="auto" data-setup='{}' poster="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B006C009_140409_R0WV_266x150.jpg">
+      <source src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B006C009_140409_R0WV.m4v" type="video/mp4">
+    </video>
+  </div>
+</ion-content>
+<ion-footer hideWhen="landscape">
+  <ion-toolbar color="dark">
+    <ion-buttons>
+      <span padding class="di di-mask"></span>
+      <span padding class="di di-calendar"></span>
+      <span padding class="di di-movie"></span>
+      <span padding class="di di-clip"></span>
+      <span padding class="di di-search"></span>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

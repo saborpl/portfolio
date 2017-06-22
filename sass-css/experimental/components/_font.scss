@@ -1,0 +1,17 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Poppins&subset=latin,latin-ext);
+
+@if $theme-font-type == web {
+	@import url($theme-font-web-title-url);
+	@import url($theme-font-web-text-url);
+}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+.text-small-1x {font-size: 100%;}
+.text-small-2x {font-size: 75%;}
+.text-small-3x {font-size: 50%;}
+.text-small-4x {font-size: 25%;}

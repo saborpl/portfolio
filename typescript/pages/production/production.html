@@ -1,0 +1,72 @@
+<!--
+  Generated template for the Production page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-buttons start>
+      <a ion-text class="ion ion-ios-create-outline ion-md-create ion-icon-2x" padding color="orange" (click)="logout()"></a>
+      <a ion-text class="ion ion-ios-cog ion-md-cog ion-icon-2x" padding color="orange" (click)="logout()"></a>
+    </ion-buttons>
+    <ion-buttons end>
+      <a ion-text class="ion ion-ios-add ion-md-add ion-icon-2x" padding color="orange" (click)="logout()"></a>
+      <a ion-text class="ion ion-ios-log-out ion-md-log-out ion-icon-2x" padding color="orange" (click)="logout()"></a>
+    </ion-buttons>
+    <ion-title>Drylab Viewer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="content-thumb">
+    <ion-slides [options]="_options" #mySlider>
+      <!--      <ion-slide *ngFor="let testSlide of testSlides">
+        <img src="http://www.gstatic.com/webp/gallery/1.jpg">
+      </ion-slide>-->
+      <ion-slide (click)="openPlayerPage()">
+        <!--<div>
+          <i class="poster-icon-disabled ion-ios-timer-outline"></i>
+        </div>-->
+        <div class="poster-info-disabled">Timed out.<br>Connect to Internet to re-enable access.</div>
+        <img class="disabled" src="assets/images/poster1.jpg">
+        <div class="poster-title disabled">Birchlegs</div>
+        <div class="poster-text disabled"> Paradox</div>
+      </ion-slide>
+      <ion-slide (click)="openPlayerPage()">
+        <ion-icon class="poster-icon-warning" name="alert"></ion-icon>
+        <img src="assets/images/poster2.jpg">
+        <div class="poster-title enabled">Birchlegs</div>
+        <div class="poster-text enabled"> Paradox</div>
+      </ion-slide>
+      <ion-slide (click)="openPlayerPage()">
+        <img src="assets/images/poster-new.jpg">
+        <div class="poster-title enabled">&nbsp;</div>
+        <div class="poster-text enabled">&nbsp;</div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <!--  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>-->
+
+  <!--
+  <ion-item>
+    <ion-input type="text" placeholder="Search a movie..." (input)="searchMovieDB($event)"></ion-input>
+  </ion-item>
+
+ <ion-list>
+    <ion-item *ngFor="let movie of movies" (click)="itemTapped($event, movie)">
+      <ion-avatar item-left>
+        <img src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" />
+      </ion-avatar>
+      <h2>{{movie.original_title}}</h2>
+      <p class="item-description">{{movie.overview}}</p>
+    </ion-item>
+  </ion-list>-->
+
+</ion-content>

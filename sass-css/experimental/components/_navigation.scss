@@ -1,0 +1,145 @@
+﻿.navbar-nav > li > a, .navbar-brand {
+    padding-top:18px !important; 
+    padding-bottom:0 !important;
+    height: 50px;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.nav > li {
+    background-color: $colordark0;
+    border-left: 1px solid $colorlight0; 
+    border-top: 3px solid $colorlight0; 
+    border-bottom: 3px solid $colorlight0; 
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: $colorlight0;
+	&:hover {
+	color: #fff;
+  }
+}
+
+.navbar-default {
+	//box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    //background-color: $colorlight0;
+	background-color: #ffffff;
+	border-color: #ffffff;
+
+}
+
+.navbar-inverse {
+    background-color: $red-base;
+    border-bottom: 1px solid $red1;
+	box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.3); 
+
+}
+.navbar-inverse .navbar-brand {
+    color: $gray-lighter;
+    padding-top: 5px ;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    background-color: rgba(0, 0, 0, 0); 
+    color: #ffffff;
+}
+.navbar-inverse .navbar-text {
+    color: $gray-lighter;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: $gray-lighter;
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #080808;
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #444444;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #333333;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #333333;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #080808;
+    color: #ffffff;
+}
+@media (max-width: 767px) {
+.navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: $gray-lighter;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #080808;
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #444444;
+}
+}
+.navbar-inverse .navbar-link {
+    color: $gray-lighter;
+}
+.navbar-inverse .navbar-link:hover {
+    color: #ffffff;
+}
+.navbar-inverse .btn-link {
+    color: $gray-lighter;
+}
+.navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
+    color: #ffffff;
+}
+.navbar-inverse .btn-link[disabled]:hover, fieldset[disabled] .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:focus {
+    color: #444444;
+}
+
+.navbar-top-color {
+    background-color: $navbar-top-background-color;
+    color : $navbar-top-color;
+	border-color: lighten($navbar-top-background-color, 10%) !important;
+}
+
+.navbar-nav > li > a {
+    color: $navbar-top-color !important;
+&:hover {
+        color: lighten($navbar-top-color, 30%) !important;
+        background-color: darken($theme-btn-color-navbar, 10%) !important;
+    }
+}
+
+.nav > li {
+	color: $navbar-top-color;
+    background-color: $theme-btn-color-navbar;
+    border-bottom: 3px solid $navbar-top-background-color;
+    border-left: 1px solid $navbar-top-background-color;
+    border-top: 3px solid $navbar-top-background-color;
+}
+
+.navbar-footer {
+    background-color: $theme-background-footer;
+    color : $theme-font-color-footer;
+	border-color: lighten($theme-background-footer, 10%) !important;
+}

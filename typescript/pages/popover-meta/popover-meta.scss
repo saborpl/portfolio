@@ -1,0 +1,13 @@
+page-popover-meta {
+    .toolbar-background {
+        background-color: color($colors, dark);
+    }
+    .toolbar-title {
+        color: color($colors, dark, contrast);
+    }
+    .popover-col-thumb {
+        color: color($colors, dark, contrast);
+        border: none;
+        padding: 10px;
+    }    
+}

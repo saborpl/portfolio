@@ -1,0 +1,45 @@
+<!--
+  Generated template for the PopoverScene page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tags (19 matches)</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-badge *ngFor="let tag of tags" color="taginactive">
+    <span>
+    <ion-icon ios="ios-pricetag" md="md-pricetag" item-left></ion-icon> {{tag}}
+  </span>
+  </ion-badge>
+
+  <ion-badge>
+    <span>
+    <ion-icon ios="ios-pricetag" md="md-pricetag" item-left></ion-icon> taginactive
+  </span>
+  </ion-badge>
+  <ion-item text-center color="dark">
+    Shot 42a
+  </ion-item>
+  <ion-row class="popover-row-thumb" responsive-sm wrap>
+    <ion-col class="popover-col-thumb" width-50>
+      <img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B084C010_150421_R4RJ_266x150.jpg">
+    </ion-col>
+    <ion-col class="popover-col-thumb" width-50>
+      <img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B023C003_150304_R4RJ_266x150.jpg">
+    </ion-col>
+    <ion-col class="popover-col-thumb" width-50>
+      <img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B006C009_140409_R0WV_266x150.jpg">
+    </ion-col>
+    <ion-col class="popover-col-thumb" width-50>
+      <img src="https://s3-eu-west-1.amazonaws.com/storage.drylab.no/kings_choice_v3/B026C014_150305_R4RJ_266x150.jpg">
+    </ion-col>
+  </ion-row>
+
+</ion-content>

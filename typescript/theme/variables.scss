@@ -1,0 +1,126 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+@import "ionic.globals";
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+$border-radius: 10px;
+$text-color: #333;
+$background-color: #fff;
+
+$popover-md-width: 360px;
+$popover-ios-width: 360px;
+$popover-wp-width: 360px;
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+$colors: ( primary: #387ef5, secondary: #32db64, danger: #f53d3d, orange: #E6A340, light:( base: #f4f4f4, contrast: #333), dark:( base: #202020, contrast: #C0C0C0), twitter:( base: #55acee, contrast: #ffffff), background-dark: ( base: #111, contrast: #FF8800), background-light: ( base: #F4F3EE, contrast: #5B5B5A, orange: #FF8800), white: #fff, taginactive: #c0c0c0, darkitemmeta: #282828);
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+@import "ionic.theme.default";
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+$ionicons-font-path: "../assets/fonts";
+@import "ionicons";
+// icodrylab
+// --------------------------------------------------
+// The Drylab icon font for Ionic. For more info, please see:
+// https://icomoon.io/app/
+$icomoon-font-path: "../assets/fonts" !default;
+$icommon-font-color: #E6A340;
+
+$di-mask: "\e900";
+$di-clip: "\e901";
+$di-movie: "\e902";
+$di-tag: "\e903";
+$di-hamburger: "\e904";
+$di-calendar: "\e905";
+$di-search: "\e906";
+
+
+@font-face {
+  font-family: 'icodrylab';
+  src:  url('#{$icomoon-font-path}/icodrylab.eot?10wj5x');
+  src:  url('#{$icomoon-font-path}/icodrylab.eot?10wj5x#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icodrylab.ttf?10wj5x') format('truetype'),
+    url('#{$icomoon-font-path}/icodrylab.woff?10wj5x') format('woff'),
+    url('#{$icomoon-font-path}/icodrylab.svg?10wj5x#icodrylab') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.di {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icodrylab' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 2;
+  color: $icommon-font-color;
+  font-size: 1.5em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+.di-mask {
+  &:before {
+    content: $di-mask;
+  }
+}
+.di-clip {
+  &:before {
+    content: $di-clip;
+  }
+}
+.di-movie {
+  &:before {
+    content: $di-movie;
+  }
+}
+.di-tag {
+  &:before {
+    content: $di-tag;
+  }
+}
+.di-hamburger {
+  &:before {
+    content: $di-hamburger;
+  }
+}
+.di-calendar {
+  &:before {
+    content: $di-calendar;
+  }
+}
+.di-search {
+  &:before {
+    content: $di-search;
+  }
+}

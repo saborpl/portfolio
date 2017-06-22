@@ -1,0 +1,46 @@
+﻿.widget-product {
+ position: fixed;
+ right:  -#{($widget-product-width)};
+ top: 50%;
+ transition: right .4s;
+ width: $widget-product-width;
+ z-index: 10;
+}
+ 
+.widget-product:hover {
+ right: 0;
+}
+ 
+.widget-product-handler,
+.widget-product-content {
+	border: 1px solid $widget-product-background-border;
+	padding: 1em .5em;
+}
+ 
+.widget-product-handler {
+ background: $widget-product-handler-background-color;
+ color: $widget-product-handler-text-color;
+ border-right: none;	
+ left: -3em;
+ position: absolute;
+ text-align: center;
+ width: 3em;
+}
+.widget-product-content {
+ background: $widget-product-content-background-color;
+ color: $widget-product-content-text-color;
+ border-width: 1px 0;
+ padding: 10px;
+ overflow: hidden;
+ width: 100%;
+ z-index: 11;
+}
+
+.widget-product-icon {
+    color: $widget-product-icon-color;
+}
+
+.big {
+ right: -20em;
+ width: 20em;
+}

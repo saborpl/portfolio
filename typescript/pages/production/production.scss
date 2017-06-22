@@ -1,0 +1,73 @@
+page-production {
+    $poster-height: 511px;
+    $poster-width: 360px;
+    $color-orange: #E6A340;
+    //$content-video-height: 85%;
+    .scroll-content {
+        background-color: black;
+    }
+
+    .swiper-slide {
+        width: $poster-width !important;
+        height: $poster-height+160;
+        margin-right: 30px;  
+    }
+    
+    .content-thumb {
+        //background-color: #000;
+        height: $poster-height+160;
+        //width: 266px;
+        & .swiper-pagination {
+            display: none;
+        }
+        & img {
+            height: $poster-height;
+            width: $poster-width !important;
+            padding: 0px;
+
+        }
+        & img.disabled {
+            opacity: 0.18;
+            filter: alpha(opacity=18); /* For IE8 and earlier */        
+        }
+        & .poster-icon-disabled {
+            position: absolute;
+            top: $poster-height/2.2;
+            font-size: 5em;
+            color: #777;
+        }
+        & .poster-icon-warning {
+            color: yellow;
+            position: absolute;
+            margin-top: -15px;
+            margin-left: -8px;
+            font-size: 2em;
+            content: \f100;
+        }
+        & .poster-title {
+            font-size: 1.4em;
+            line-height: 2;
+            display: block;
+        }
+        & .poster-info-disabled {
+            bottom: 20%;
+            position: absolute;
+            padding: 20px;
+            color: #777;
+        }
+        & .poster-text {
+            font-size: inherit;
+            line-height: inherit;
+            display: block;
+        }
+        & .poster-title.enabled {
+            color: #fff;
+        }
+        & .poster-text.enabled {
+            color: #777;
+        }
+        & .poster-title.disabled, .poster-text.disabled {
+            color: #333;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+﻿$gray-base: #881b28;
+$gray-darker  : lighten($gray-base, 13.5%); // #222
+$gray-dark    : lighten($gray-base, 20%);   // #333
+$gray         : lighten($gray-base, 33.5%); // #555
+$gray-light   : lighten($gray-base, 46.7%); // #777
+$gray-lighter : lighten($gray-base, 75%);   // #f2f2f2
+$gray-lightest : #e8e8e8;
+
+
+$blue-light : #009DDC;
+$blue-dark  : #215697;
+$red        : #F55;
+$yellow		: #ffd800;
+$orange		: #ffa200;
+
+$color-main: $gray-dark;
+
+$purple-base: $theme-primary-color;
+$purple1 : lighten($theme-primary-color, 10%);
+$purple2 : lighten($theme-primary-color, 20%);
+$purple3 : lighten($theme-primary-color, 30%);
+$purple4 : lighten($theme-primary-color, 40%);
+$purple5 : lighten($theme-primary-color, 50%);
+
+$red-base: #881b28;
+$red1 : lighten($red-base, 10%);
+$red2 : lighten($red-base, 30%);
+$red3 : lighten($red-base, 50%);
+$red4 : lighten($red-base, 60%);
+$red5 : lighten($red-base, 80%);
+
+$blue-base: #3879ac;
+$blue1 : lighten($blue-base, 10%);
+$blue2 : lighten($blue-base, 30%);
+$blue3 : lighten($blue-base, 50%);
+$blue4 : lighten($blue-base, 60%);
+$blue5 : lighten($blue-base, 80%);
+
+
+$colorlight0 : $theme-secondary-color;
+$colorlight1 : darken($theme-secondary-color, 10%);
+$colorlight2 : darken($theme-secondary-color, 30%);
+$colorlight3 : darken($theme-secondary-color, 50%);
+$colorlight4 : darken($theme-secondary-color, 60%);
+$colorlight5 : darken($theme-secondary-color, 80%);
+
+
+$colordark0 : $theme-primary-color;
+$colordark1 : lighten($theme-primary-color, 10%);
+$colordark2 : lighten($theme-primary-color, 30%);
+$colordark3 : lighten($theme-primary-color, 50%);
+$colordark4 : lighten($theme-primary-color, 60%);
+$colordark5 : lighten($theme-primary-color, 80%);
+
+
+$colorgray0 : #f2f2f2;
+$eventcard-active-color : $theme-eventcard-font-color-active;
+$date-box-border : none;
+$eventcard-odd : $theme-eventcard-background-odd-even;
+$eventcard-even : lighten($theme-eventcard-background-odd-even, 20%);
+$eventcard-calendar : darken($theme-eventcard-background-odd-even, 10%);
+$fontcolorlight : white;
+$fontcolordark : #6a6a6a;
+$eventcard-yearnumber : $theme-eventcard-font-color;
+$eventcard-ahover : darken($theme-eventcard-background-odd-even, 15%);

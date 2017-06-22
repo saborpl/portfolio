@@ -1,0 +1,8 @@
+body {
+    padding-top: 60px;
+}
+
+nav {
+    text-transform: uppercase;
+    @media only screen and (max-width: 992px) {font-size: 0.73em;}
+}

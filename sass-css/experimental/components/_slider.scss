@@ -1,0 +1,61 @@
+﻿.msi-slider .carousel-caption {
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    padding: 10px 5px 40px 5px;
+}
+
+.msi-slider .carousel-caption small {
+    color: white !important;
+    font-weight: 700;
+}
+
+.msi-slider h3, .msi-slider h4 {
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.msi-slider .carousel-indicators {
+    margin-top: 10px;
+}
+
+.msi-slider a {
+    color: white !important;
+    text-transform: uppercase;
+    &:hover {
+        color:darkest(white,70%) !important;
+        text-decoration: none;
+    }
+}
+
+
+$price-box : 95px;
+.msi-slider .price-box {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    //-ms-border-radius: $price-box;
+    //border-radius: $price-box;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    display: block;
+    width: $price-box;
+    //height: $price-box;
+}
+
+.msi-slider .price-box h4 {
+    line-height: 0.8;
+    color: white !important;
+}
+
+.msi-slider .price-box small {
+    color: white !important;
+    font-weight: 700;
+}
+
+.msi-slider .description {
+    margin: 10px 50px 10px 50px ;
+}

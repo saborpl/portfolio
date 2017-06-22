@@ -1,0 +1,56 @@
+﻿/* przweniesc do shoping cart */
+
+.shopping-cart-event-title {
+    font-size: 16px;
+    color: $fontcolordark;
+}
+.shopping-cart-event-subtitle {
+    color: #bbb;
+}
+
+.row-shopping-cart {
+    background-color: #555555;
+    padding: 8px;
+}
+
+.row-shopping-cart-tickets { 
+    border-bottom: 1px solid #bbb;
+    padding: 5px;
+    min-height: 50px;
+    //margin: 2px;
+}
+
+.row-shopping-cart-tickets:nth-child(odd) {
+    background-color: $eventcard-odd;
+}	
+.row-shopping-cart-tickets:nth-child(even) {
+    background-color: $eventcard-even;
+    color: $theme-font-text-color;
+}
+
+.row-shopping-cart-summary {
+    color: black;
+    padding: 5px;
+    min-height: 50px;
+    margin: 2px 0 10px 2px;
+}
+
+.row-shopping-cart-summary .title {
+    min-height: 50px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.row-shopping-cart-buttons {
+    min-height: 50px;
+    padding: 5px;
+    margin: 4px;
+}
+
+.shopping-cart-summary {
+    color: $colordark0;
+    font-weight: 700;
+    font-size: 1.3em;
+}

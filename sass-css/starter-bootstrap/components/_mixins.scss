@@ -1,0 +1,15 @@
+// links colors
+@mixin linx ($link, $visit, $hover, $active) {
+	a {
+		color: $link !important;
+		&:visited {
+			color: $visit !important;
+		}
+		&:hover {
+			color: $hover !important;
+		}
+		&:active {
+			color: $active !important;
+		}
+	}
+}

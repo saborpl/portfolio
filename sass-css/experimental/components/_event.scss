@@ -1,0 +1,91 @@
+﻿.title-longterm {
+    border-bottom: 1px solid$gray-light;
+    padding-bottom: 5px;
+}
+
+.framecolor {
+    box-shadow: 2px 3px 3px #e8e8e8;
+    background-color: #f4f4f4;
+	border: 1px solid #777;
+}
+
+.event-background {
+    background-color: $theme-event-background;
+}
+
+.eventlist {
+	color: $theme-event-font-color !important;
+    background-color: $theme-event-background;
+    border: 1px solid $theme-event-border;
+	    &:hover {
+      background-color: lighten($theme-event-background,10%);
+    }
+}
+
+.eventlist .padding5 {
+    padding: 5px;
+}
+
+.eventlist .media-left, .eventlist .media > .eventlist .pull-left {
+    padding-right: 0px;
+}
+
+//.eventlist .media-body {
+//   width: 10000px;
+//}
+
+.panel-event-details {
+    background-color: $theme-event-background;
+    border: 0px solid $date-box-border;
+    border-radius: 0;
+    padding: 0;
+}
+
+.panel-default {
+    border: 1px solid $theme-event-border;
+}
+
+.text-event-details {
+    padding-top: 10px;
+    padding-left: 10px;
+    color: $theme-font-text-color;
+}
+
+.scene-bg-event-details {
+    background-color: $colorlight0;
+}
+
+.panel-event-details .panel-heading {
+    padding: 0;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.panel-event-details .panel-body {
+    padding: 0;
+ }
+
+.panel-event-details h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.panel-event-details .btn-margin {
+    padding-bottom: 2px !important;
+    margin-bottom: 5px !important;
+}
+
+.event-new {
+    background-color: rgba($red, 0.3);
+	color: white;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px;
+	position: absolute;
+	padding: 3px 5px;
+}
+
+.event-gallery-background {
+	background-color: $theme-container-background;
+}

@@ -1,0 +1,241 @@
+﻿
+.products-list {
+    margin-bottom: 15px;
+}
+.product-head {
+    //background: #ffffff none repeat scroll 0 0;
+    border-color: $theme-event-background $theme-event-background $theme-primary-color;
+    border-style: solid;
+    border-width: 1px 1px 4px;
+    font-size: 18px;
+    padding: 0 13px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.product-col {
+    background: $theme-event-background none repeat scroll 0 0;
+    border: 1px solid $theme-event-border;
+    margin-bottom: 20px;
+    padding: 15px 15px 10px;
+    height: 400px;
+    max-height: 400px;
+}
+.product-col .cart-button .btn {
+    border-radius: 0;
+}
+.product-col.list .image {
+    float: left;
+    padding: 20px 30px 10px 0;
+}
+.product-col .caption {
+    padding: 20px 0;
+}
+.product-col h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.product-col h4, .product-col h4 a {
+    color: #252a2f;
+}
+.product-col .description {
+    color: lighten($theme-font-text-color,20%);
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 0;
+    text-align: justify;
+}
+.product-col.list .description {
+    padding-right: 20px;
+}
+.product-col .price {
+    padding: 10px 0;
+}
+.product-col .price .price-tax {
+    color: #2f353b;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.product-col .price span.price-new {
+    color: #2f353b;
+    font-size: 24px;
+    padding-right: 5px;
+}
+.product-col .price span.price-old {
+    color: lighten($theme-font-text-color,20%);
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.panel-smart {
+    background: $theme-event-background none repeat scroll 0 0;
+    border: 1px solid $theme-event-border;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding: 20px;
+    text-align: left;
+}
+
+.panel-smart hr {
+    border-color: lighten($theme-primary-color,20%);
+}
+
+.panel-smart .panel-heading {
+    border-bottom: 1px solid $theme-event-border;
+    color: #252a2f;
+    padding: 5px 0 15px;
+}
+.panel-smart h3.panel-title {
+    font-size: 24px;
+}
+.panel-smart .panel-body {
+    padding: 20px 0 0;
+}
+.product-info {
+    padding-top: 10px;
+}
+.product-info .images-block {
+}
+.product-info .images-block .thumbnail {
+    border-radius: 0;
+    padding: 10px;
+}
+.product-info.full .images-block .list-inline {
+    margin-left: -5px;
+}
+.product-info.full .images-block .list-inline li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.product-info .images-block .list-inline {
+    margin-left: -2px;
+}
+.product-info .images-block .list-inline li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.product-info .images-block .list-inline .thumbnail {
+    padding: 5px;
+}
+.product-info .product-details {
+}
+.product-info .product-details h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+.product-info .product-details h3 {
+    font-size: 22px;
+}
+.product-info .product-details h2, .product-info .product-details h3 {
+    text-transform: uppercase;
+}
+.product-info .product-details .manufacturer {
+    color: lighten($theme-font-text-color,20%);
+    text-transform: uppercase;
+}
+.product-info .product-details .manufacturer span {
+    color: $theme-font-text-color;
+    display: inline-block;
+    min-width: 130px;
+}
+.product-info .product-details .price {
+}
+.product-info .product-details .price-head {
+    color: #2f353b;
+    font-size: 24px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.product-info .product-details .price-tax {
+    color: #2f353b;
+    font-size: 14px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.product-info .product-details .price-new {
+    color: #2f353b;
+    font-size: 24px;
+    padding-right: 5px;
+}
+.product-info .product-details .price-old {
+    color: lighten($theme-font-text-color,20%);
+    font-size: 18px;
+    text-decoration: line-through;
+}
+.product-info .product-details .options {
+}
+.product-info .product-details .options h3 {
+    margin-bottom: 20px;
+}
+.product-info .product-details .options h6 {
+    font-weight: 700;
+}
+.product-info-box {
+    padding-top: 120px;
+}
+.product-info-box + .product-info-box {
+    padding-top: 30px;
+}
+.product-info-box .heading {
+    //background: #ffffff none repeat scroll 0 0;
+    border-color: $theme-event-background $theme-event-background $theme-primary-color;
+    border-style: solid;
+    border-width: 1px 1px 4px;
+    color: $theme-font-text-color;
+    font-size: 18px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+}
+.product-info-box .content {
+    color: lighten($theme-font-text-color,20%);
+    font-size: 13px;
+}
+.tabs-panel {
+    margin-top: 20px;
+}
+.tabs-panel.panel-smart {
+    padding: 0;
+}
+.tabs-panel .nav-tabs {
+    border-bottom: 4px solid $theme-primary-color;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.tabs-panel .nav-tabs > li {
+    margin-bottom: 0;
+	@media (max-width: 981px) {
+		float: none;
+	}
+}
+.tabs-panel .nav-tabs > li > a {
+    background-color: $theme-event-background;
+    color: lighten($theme-font-text-color,20%);
+    margin: 0;
+}
+.tabs-panel .nav-tabs > li > a, .tabs-panel .btn, .tabs-panel .form-control {
+    border-radius: 0;
+}
+.tabs-panel .nav-tabs > li.active > a, .tabs-panel .nav-tabs > li.active > a:hover, .tabs-panel .nav-tabs > li.active > a:focus, .tabs-panel .nav > li > a:hover, .tabs-panel .nav > li > a:focus {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.tabs-panel .nav-tabs > li > a, .tabs-panel .nav-tabs > li.active > a, .tabs-panel .nav-tabs > li.active > a:hover, .tabs-panel .nav-tabs > li.active > a:focus, .tabs-panel .nav-tabs > li > a:hover {
+    border: medium none;
+}
+.tabs-panel .nav-tabs > li.active, .tabs-panel .nav-tabs > li.active > a {
+    background: $theme-secondary-color none repeat scroll 0 0;
+    color: $theme-font-text-color;
+    font-weight: 700;
+}
+.tabs-panel .nav-tabs > li > a:hover {
+    background: darken($theme-badge-color-active,20%) none repeat scroll 0 0;
+}
+.tabs-panel .tab-content {
+    font-size: 13px;
+    padding: 20px;
+}
+.tabs-panel label.control-label {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.tabs-panel label.control-label.ratings {
+    padding-top: 1px;
+}

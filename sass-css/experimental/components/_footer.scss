@@ -1,0 +1,48 @@
+﻿html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  //margin-bottom: 220px;
+}
+
+.footer {
+	padding: 15px;
+	bottom: 0;
+	/* Set the fixed height of the footer here */
+	min-height: 180px;
+	background-color: $theme-background-footer;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-title {
+    color: $theme-font-color-footer;
+    font-weight: bold;
+}
+
+.footer-text {
+    color: $theme-font-color-footer;
+    font-weight: normal;
+	& a {
+	      color: $theme-font-color-footer;
+	  }
+}
+.footer-container {
+    padding: 15px;
+}
+
+.footer-fixed-bottom {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1030;    
+	min-height: 50px;
+}
+
+.footer-margin-top {
+    margin-top: 20px;
+}

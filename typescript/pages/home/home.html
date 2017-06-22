@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar [color]="isAndroid ? 'dark' : 'dark'">
+        <ion-buttons end>
+            <button padding ion-button color="light" (click)="logout()">
+        <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+      </button>
+        </ion-buttons>
+        <ion-title>
+            Dailies Viewer 3
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+    <ion-card>
+        <ion-card-header>
+            Response
+        </ion-card-header>
+
+        <ion-card-content>
+            <h3>user: {{userinfo.username}}</h3>
+            <h3>fullname: {{userinfo.fullname}}</h3>
+            <h3>sessionid: {{userinfo.sessionid}}</h3>
+            <h3>useragent: {{platforminfo.useragent}}</h3>
+            <h3>screen size: {{platforminfo.screensize}}</h3>
+            <h3>device uuid: {{platforminfo.deviceuuid}}</h3>
+        </ion-card-content>
+    </ion-card>
+    <button ion-button icon-right (click)="openProductionPage()">
+        Production list
+        <ion-icon name="star"></ion-icon>
+    </button>
+</ion-content>

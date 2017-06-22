@@ -1,0 +1,20 @@
+$colors:
+( 
+    'gray-dark':#2d2d2d,
+    'gray-dark-hover':#131313,
+    'gray-light':#f2f2f2,
+    'gray-light-hover':#e8e8e8,    
+    'blue-light':#0a9ad6,
+    'blue-light-hover':#0787bd,
+    'blue-light2':#1289ba,
+    'blue-dark':#075a9b,
+    'blue-dark-hover':#043b65,
+    'green-dark':#006600,
+    'green-dark-hover':#039903,
+);
+
+@each $name, $value in $colors {
+    .color-bg-#{$name} { background-color: $value; }
+    .color-border-#{$name} { border-color: $value; }
+    .color-text-#{$name} { color: $value; }
+}

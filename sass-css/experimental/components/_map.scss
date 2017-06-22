@@ -1,0 +1,104 @@
+﻿#MapOfSectors {width:70px;position:relative;color:#fff;}
+.invisible {display:none;visibility:hidden;}
+#TranspMapOfSectors {position:absolute;z-index:30;}
+.tipSectorName {width:100%;padding-bottom:3px;margin-bottom:3px;font-size:16px;border-bottom:solid 1px #fff;}
+.tipSecotrImage {margin-bottom:6px;display:none;visibility:hidden;}
+.tipTitle {width:100%;padding-top:6px;padding-bottom:3px;margin-bottom:3px;font-size:12px;border-bottom:solid 1px #fff;font-weight:bold}
+.tipTable {width:100%;border:none;border-collapse:collapse;color:#fff;}
+.tipTicketKind {text-align:left;width:60%;vertical-align:top;color:#fff;}
+.tipTicketPrice {text-align:right;width:40%;vertical-align:top;color:#fff;}
+.tipSeatsTitle {text-align:left;width:60%;vertical-align:top;color:#fff;}
+.tipSeatsValue {text-align:right;width:40%;vertical-align:top;color:#fff;}
+
+.map-legend-seats
+{
+    > li 
+    {
+        @include block( 100% );
+        padding-left: 63px;
+        margin-bottom: 4px;
+
+        line-height: 23px;
+    }
+}
+
+$MapSeatsIcons: (
+    'free' : 'caption_ico_1.gif',
+    'taken' : 'caption_ico_2.gif',
+    'choosen' : 'caption_ico_3.gif',
+    'invalid' : 'caption_ico_4.gif',
+    'double' : 'caption_ico_5.gif',
+    'ticketGroups' :  'caption_ico_7.gif'
+);
+
+$activeMapSeatsIcons : 'free', 'taken', 'choosen', 'invalid', 'double', 'ticketGroups';
+
+@each $icon in $activeMapSeatsIcons {
+    .map-seats-icon-#{$icon} {
+        background: url("../images/#{map-get($MapSeatsIcons, $icon)}") no-repeat 0 0;
+    }
+}
+
+.map-seats-icon
+{
+    @include block( 48px, 23px );
+}
+
+.map-legend-ticketsGroup
+{
+    > li 
+    {
+        @include block( 100% );
+        margin-bottom: 4px;
+        line-height: 23px;
+
+        @include respond-to( "min-medium" )
+        {
+            display: inline-block;
+            width: auto;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin-bottom: 0;
+        }
+
+    }
+}
+
+.map-legend-ticketsGroup-icon
+{
+    @include block-cube( 23px );
+    padding-right: 10px;
+}
+
+.map-tickets-dropDownList
+{
+    @include respond-to( "min-medium" )
+    {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.map-section{
+    margin-top: 30px;
+}
+
+.map-container
+{
+    @include respond-to( "only-small" )
+    {
+        transform: scale(0.3);
+    }
+}
+
+.map-header-list
+{
+    > li {  line-height: 2; }
+}
+
+.overflow {
+    overflow: auto;
+}
+
+

@@ -1,0 +1,26 @@
+<ion-content id="login" class="login-content" padding>
+
+
+  <form (ngSubmit)="login()" #registerForm="ngForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50 offset-25 text-center>
+          <img src="assets/images/dailies_logo.png" width="70" />
+          <h4 ion-text color="light">Welcome to Drylab Viewer. Please login. <small></small></h4>
+          <ion-list inset>
+            <ion-item>
+              <ion-input placeholder="Username" type="text" name="username" [(ngModel)]="registerCredentials.username" required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input placeholder="Password" type="password" name="password" [(ngModel)]="registerCredentials.password" required></ion-input>
+            </ion-item>
+          </ion-list>
+          <div padding>
+            <button ion-button color="primary" block type="submit" [disabled]="!registerForm.form.valid">Login</button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+</ion-content>

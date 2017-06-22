@@ -1,0 +1,21 @@
+page-popover-tag {
+    .fixed-content {
+        background-color: #404040;
+    }
+    span {
+        color: #fff;
+        font-size: 1.2em;
+    }
+ion-badge {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    min-width: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}    
+}

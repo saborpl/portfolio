@@ -1,0 +1,70 @@
+﻿@if $theme-font-type == local {
+	@font-face {
+		font-family: $theme-text-font;
+		src: url(#{$themesPath}/fonts/#{$theme-text-font}.eot); /* IE9 Compat Modes */
+		src: url(#{$themesPath}/fonts/#{$theme-text-font}.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+			url(#{$themesPath}/fonts/#{$theme-text-font}.woff) format('woff'), /* Modern Browsers */
+			url(#{$themesPath}/fonts/#{$theme-text-font}.ttf)  format('truetype'), /* Safari, Android, iOS */
+			url(#{$themesPath}/fonts/#{$theme-text-font}.svg#svgFontName) format('svg'); /* Legacy iOS */
+}
+	@font-face {
+	font-family: $theme-title-font;
+	src: url(#{$themesPath}/fonts/#{$theme-title-font}.eot); /* IE9 Compat Modes */
+	src: url(#{$themesPath}/fonts/#{$theme-title-font}.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+		url(#{$themesPath}/fonts/#{$theme-title-font}.woff) format('woff'), /* Modern Browsers */
+		url(#{$themesPath}/fonts/#{$theme-title-font}.ttf)  format('truetype'), /* Safari, Android, iOS */
+		url(#{$themesPath}/fonts/#{$theme-title-font}.svg#svgFontName) format('svg'); /* Legacy iOS */
+	}
+}
+
+body{
+	font-family: $theme-text-font;
+	font-size: #{$theme-font-size};
+	color: $theme-font-text-color;
+
+	@if $theme-background-type == color {
+	    background: $theme-background-color;
+	}
+	@if $theme-background-type == image {
+	    background: url(#{$themesPath}/images/#{$theme-background-image}) repeat fixed 0 0;
+	}
+
+  min-height: 800px;
+  //padding-top: 50px;
+}
+
+.list-unstyled
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.-text-one-line
+{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.-text-to-right{ text-align: right }
+
+.top-space{ margin-top: 30px }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: $theme-title-font;
+    color: $theme-font-title-color !important;
+    font-weight: 700;
+}
+
+small {
+    color: lighten($theme-font-title-color, 10%) !important;
+}
+
+a.red {
+    color: red;
+}
+
+a.green {
+    color: green;
+}

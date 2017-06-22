@@ -1,0 +1,78 @@
+.side-menu-strefa-info {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0   px;        
+    }    
+    .accordion {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .accordion-toggle-title {
+        font-weight: 700;
+        border-bottom: 1px solid map-get($colors, "blue-light2");
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        &:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+    }
+    .accordion-toggle-single {
+        border-bottom: 1px solid map-get($colors, "blue-light2");
+        margin: 0;
+        padding: 10px;
+        position: relative;
+    }
+    .accordion-toggle {
+        border-bottom: 1px solid map-get($colors, "blue-light2");
+        cursor: pointer;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        &:last-child {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    .accordion-toggle.active:after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        width: 0;
+        height: 0;
+        border-bottom: 5px solid #fff;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+    }
+    .accordion-toggle:before {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 17px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid #fff;
+        border-left: 5px solid rgba(0, 0, 0, 0);
+        border-right: 5px solid rgba(0, 0, 0, 0);
+    }
+    .accordion-toggle.active:before {
+        display: none;
+    }
+    .accordion-content {
+        display: none;
+        padding: 10px;
+        vertical-align: middle;
+    }
+    .accordion-list-item {
+        margin: 5px;
+        padding: 5px 0 15px 0;
+        vertical-align: middle;
+        border-bottom: 1px solid map-get($colors, "blue-light");        
+    }
+    .accordion-toggle.active {
+        color: #fff;
+    }
+}

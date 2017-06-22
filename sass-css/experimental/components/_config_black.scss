@@ -1,0 +1,211 @@
+﻿// ** PLIK KONFIGURACYJNY DLA MSI STANDARD. PROSZE PAMIETAC O KONIECZNOSCI KOMPILACJI TEGO PLIKU .scss do .css ! ** //
+// ** NIEKTÓRE PLIKI GRAFICZNE WYKORZYSTANE W MSI POSIADAJĄ STAŁE NAZEWNCTWO:									 **//
+// ** plik z logo msi: logo.png
+// ** plik z logo do szablonów maili i pdf: logo-emailpdf.png
+
+//==============================================================================//
+//		MODYFIKACJE PODSTAWOWE
+//==============================================================================//
+
+// podstawowy kolor strony
+$theme-primary-color : #a80000;
+// drugi kolor strony (tylko skorka demo2) #eff0f2
+$theme-secondary-color : #1c1f24;
+$theme-tertiary-color: #f2b632;
+// ustala typ tła msi: "image" - tło graficzne z pliku lub "color" jako stały kolor
+$theme-background-type : color;
+// kolor tła
+//$theme-background-color : #fff;
+$theme-background-color : #000;
+// nazwa pliku z tłem (katalog themes/nazwa_skorki/images/)
+$theme-background-image : "background.jpg";
+
+// typ czcionki (web - czcionka web'owa, system - czcionka systemowa,
+// local - czcionka lokalna dołaczana z pliku (konwerter online z ttf: http://www.font2web.com/)
+// czcionki umieszczmy w katalogu themes/nazwa_skorki/fonts/)
+$theme-font-type : web;
+// rodzaj czcionki dla tytułów
+//$theme-title-font : 'AguafinaScript-Regular';
+$theme-title-font : 'Droid Sans', sans-serif;
+// rodzja czcionki dla tekstów																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+//$theme-text-font : 'Open Sans';
+$theme-text-font : 'Droid Sans', sans-serif;
+// rozmiar czcionki tesktów
+$theme-font-size : 14px;
+// kolor czcionki tekstów
+$theme-font-text-color : #f4f4f4;
+// kolor czcionki tytułów
+$theme-font-title-color : #fff;
+// sciezka do fonta webowego
+$theme-font-web-text-url : "https://fonts.googleapis.com/css?family=Droid+Sans&subset=latin,latin-ext";
+$theme-font-web-title-url : "https://fonts.googleapis.com/css?family=Droid+Sans&subset=latin,latin-ext";
+
+// modyfikacje tabel
+// jednolity kolor tła tabeli
+$table-nonstriped : true;
+//==============================================================================//
+//		MODYFIKACJE ZAAWANSOWANE
+//==============================================================================//
+
+// kolor paska nawigacyjnego gornego
+//$navbar-top-background-color : #eff0f2;
+$navbar-top-background-color : $theme-secondary-color;
+// kolor czcionki na pasku nawigacyjnym gornym
+$navbar-top-color : #fff;
+
+//##### TYLKO SKÓRKA msidemo1 i msidemo2 ###
+// wysokosc naglowka
+$navbar-height: 50px;
+// wysokosc loga w naglowku - min. 50px
+$navbar-logo-height : 50px;
+//##########################################
+
+// stopka kolor tla
+$theme-background-footer : #000;
+// stopka kolor czcionki
+$theme-font-color-footer : #777;
+
+// kolor tla wydarzenia w repertuarze
+$theme-event-background : #586073;
+$theme-event-border : #000;
+$theme-event-font-color: #ffffff;
+
+// kolor przycisku z godzina wydarzenia aktywne
+$theme-badge-color-active : $theme-secondary-color;
+// kolor przycisku z godzina wydarzenia nieaktywne
+$theme-badge-color-inactive : #e8e8e8;
+// kolor czcionki na przyciskach
+$theme-badge-font-color : #777;
+
+
+// parametry przycisku "anuluj/powrót"
+$theme-btn-color-anuluj : #333;
+$theme-button-border-anuluj : #aaa;
+$theme-button-font-color-anuluj : #f4f4f4;
+
+// parametry przycisku "kup/do koszyka"
+$theme-btn-color-kup : $theme-primary-color;
+$theme-button-border-kup : none;
+$theme-button-font-color-kup : #fff;
+
+// parametry przycisku "rezerwuj"
+$theme-btn-color-rezerwuj : #3a8723;
+$theme-button-border-rezerwuj : #3a8723;
+$theme-button-font-color-rezerwuj : #fff;
+
+// parametry tla kontenera (none - brak)
+$theme-container-background : $theme-background-color ;
+$theme-container-border : none;
+
+// pasek krokow
+$theme-steps-primary-color : $theme-primary-color;
+
+// kolor tla okienka popup dla wyboru rezerwacja/sprzedaz
+$theme-repertoire-popup-background : #1c1f24;
+
+// kolor pol formlarza
+$theme-form-control-background : #000;
+// kolor obramowamia pol formlarza
+$theme-form-control-border : none;
+// kolor czcionki pol formlarza
+$theme-form-control-font-color : none;
+
+// kolor tla paska z alertem ostrzezenie
+$theme-alert-warning-background-color : black;
+// kolor obramowania paska z alertem ostrzezenie
+$theme-alert-warning-border-color : none;
+// kolor czcionki paska z alertem ostrzezenie
+$theme-alert-warning-font-color : none;
+
+// kolor tla paska z alertem blad
+$theme-alert-danger-background-color : #a80000;
+// kolor obramowania paska z alertem blad
+$theme-alert-danger-border-color : none;
+// kolor czcionki paska z alertem blad
+$theme-alert-danger-font-color : none;
+
+// kolor tla paska z alertem info
+$theme-alert-info-background-color : #d75813;
+// kolor obramowania paska z alertem info
+$theme-alert-info-border-color : $theme-primary-color;
+// kolor czcionki paska z alertem info
+$theme-alert-info-font-color : #f4f4f4;
+
+
+// kolor tla paska z alertem success
+$theme-alert-success-background-color : #d75813;
+// kolor obramowania paska z alertem info
+$theme-alert-success-border-color : $theme-primary-color;
+// kolor czcionki paska z alertem info
+$theme-alert-success-font-color : #f4f4f4;
+
+// widget zakup produktu
+$widget-product-width : 20em;
+$widget-product-handler-background-color : brown;
+$widget-product-handler-text-color : #e8e8e8;
+
+$widget-product-content-background-color : #e8e8e8;
+$widget-product-content-text-color : #777;
+
+$widget-product-background-border : #ccc;
+$widget-product-icon-color : white;
+
+// paginacja produkty
+$pagination-product-active-background : $theme-primary-color;
+$pagination-product-active-font-color : #FFF;
+$pagination-product-background : $theme-secondary-color;
+$pagination-product-font-color : $theme-font-text-color;
+
+// modyfikacje sceny true/false
+$theme-scene : true;
+$theme-scene-background-color : #f4f4f4;
+$theme-scene-font-color : #777;
+$theme-scene-border-color : #e8e8e8;
+
+// wybor pakietu
+$theme-box-package-color: yellowgreen;
+
+//==============================================================================//
+//		TYLKO DLA SKORKI DEMO1
+//==============================================================================//
+
+// czy kartki z kalendarza mają byc zaokrąglone (true - tak, false - nie)
+$theme-calendar-card-radius : false;
+// animacja kartek kalendarza
+$theme-calendar-card-animation : true;
+// kolor kartki kalendarza
+$theme-calendar-card-background-color : #fff;
+// czy wlaczyc cienie kartki
+$theme-calendar-card-box-shadow : true;
+// czy badge z godzina wyudarzenia maja byc zaokrąglone (true - tak, false - nie)
+$theme-badge-radius : true;
+// kolor czcionki duzej w kalendarzu
+$theme-calendar-card-title-color : #333;
+// kolor czcionki małej w kalendarzu
+$theme-calendar-card-text-color : $theme-primary-color;
+// czy obrazki wydarzeń w repertuarze mają być zaokrąglone (true - zaokrąglone, false - prostokątne)
+$theme-image-radius : false;
+// panel-event-details-background
+$panel-event-details-background : #1c1f24;
+//==============================================================================//
+//		TYLKO DLA SKÓRKI DEMO2
+//==============================================================================//
+
+// parametry przyciskow w gornej nawigacji
+//$theme-btn-color-navbar : #ed7749;
+$theme-btn-color-navbar : $theme-primary-color;
+// kolor paska nad datami
+//$theme-background-dates-box : #eff0f2;
+$theme-background-dates-box : $theme-secondary-color;
+//$theme-border-dates-box : #e5e5e7;
+$theme-border-dates-box : $theme-secondary-color;
+$theme-font-color-dates-box : gray;
+// kartki z kalendarza
+$theme-eventcard-background-active : $theme-primary-color;
+$theme-eventcard-font-color-active : white;
+$theme-eventcard-background-odd-even : #586073;
+$theme-eventcard-font-color : #f4f4f4;
+// parametry przycisku "więcej"
+$theme-btn-color-wiecej : $theme-primary-color;
+$theme-button-border-wiecej : $theme-primary-color;
+$theme-button-font-color-wiecej : #fff;
